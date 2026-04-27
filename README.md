@@ -31,19 +31,6 @@
 
 ---
 
-### 🧰 Stack
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square)
-![nuclei](https://img.shields.io/badge/nuclei-00599C?style=flat-square)
-![masscan](https://img.shields.io/badge/masscan-black?style=flat-square)
-![Shodan](https://img.shields.io/badge/Shodan-red?style=flat-square)
-![httpx](https://img.shields.io/badge/httpx-blueviolet?style=flat-square)
-
----
-
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xbartita&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true)
@@ -51,4 +38,5 @@
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xbartita&layout=compact&theme=chartreuse-dark&hide_border=true)
 
 </div>
+
 
