@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Ahmed+Abdel+Rasoul+%C2%B7+0xbartita;Bug+Bounty+Hunter;Security+Researcher;Tool+Builder" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=Ahmed+Abdel+Rasoul+%C2%B7+0xbartita;Bug+Bounty+Hunter;Penetration+Tester;Tool+Builder" alt="Typing SVG" />
 
 <br/>
 
@@ -15,7 +15,7 @@
 ### 👾 About Me
 
 - 🔍 Bug bounty hunter — web, Android & iOS targets
-- 🛠 Building recon & automation tooling for security researchers
+- 🛠 Building recon & exploitation tools for bug bounty & pentesting
 - 🎯 HackerOne focused — from asset discovery to vulnerability submission
 - 🤖 Automating everything: recon pipelines, scanners, Telegram bots
 - 🌐 Portfolio & writeups → [0xbartita.com](https://0xbartita.com)
@@ -51,3 +51,4 @@
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xbartita&layout=compact&theme=chartreuse-dark&hide_border=true)
 
 </div>
+
