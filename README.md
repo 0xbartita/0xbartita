@@ -33,11 +33,12 @@
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xbartita&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&hide_rank=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xbartita&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&hide_rank=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xbartita&layout=compact&theme=chartreuse-dark&hide_border=true)
 
 </div>
+
 
 
 
