@@ -25,32 +25,34 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Keep the static star-count badges current. Usually a no-op (star counts
+      # change rarely), so it commits only when a number actually moved.
+      - name: Refresh star badges
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 .github/scripts/refresh_stars.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- README.md; then
+            echo "Star counts unchanged."
+          else
+            git add README.md
+            git commit -m "chore: refresh star counts [skip ci]"
+            git push
+          fi
+
+      # Generate and commit github-metrics.svg. metrics handles its own commit.
+      # Works with the default GITHUB_TOKEN for public data; add a repo secret
+      # named METRICS_TOKEN (a PAT) to also include private-repo contributions.
       - name: Generate metrics SVG
         uses: lowlighter/metrics@v3.34
         with:
-          # Works with the default GITHUB_TOKEN for public data. Add a repo
-          # secret named METRICS_TOKEN (a PAT) to also count private repos.
           token: ${{ secrets.METRICS_TOKEN || github.token }}
+          committer_token: ${{ github.token }}
           filename: github-metrics.svg
-          output_action: none          # write to workspace; we commit below
+          output_action: commit
           config_timezone: Africa/Cairo
           plugin_languages: yes
           plugin_languages_details: bytes-size, percentage
           plugin_languages_limit: 8
-
-      - name: Refresh star badges from GitHub API
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 .github/scripts/refresh_stars.py
-
-      - name: Commit changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add github-metrics.svg README.md
-          if git diff --cached --quiet; then
-            echo "Nothing changed."
-          else
-            git commit -m "chore: refresh profile metrics & star counts [skip ci]"
-            git push
-          fi
