@@ -1,0 +1,56 @@
+name: Update profile metrics
+
+# Regenerates github-metrics.svg (stats + top languages) and refreshes the
+# static star badges in README.md, committing both back to the repo. This
+# replaces the shared github-readme-stats.vercel.app instance (paused) and the
+# live shields.io star badges (which can cache an "invalid" state).
+
+on:
+  schedule:
+    - cron: "17 6 * * *"   # daily, 06:17 UTC
+  workflow_dispatch:        # allow manual runs
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/metrics.yml"
+      - ".github/scripts/refresh_stars.py"
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate metrics SVG
+        uses: lowlighter/metrics@v3.34
+        with:
+          # Works with the default GITHUB_TOKEN for public data. Add a repo
+          # secret named METRICS_TOKEN (a PAT) to also count private repos.
+          token: ${{ secrets.METRICS_TOKEN || github.token }}
+          filename: github-metrics.svg
+          output_action: none          # write to workspace; we commit below
+          config_timezone: Africa/Cairo
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+      - name: Refresh star badges from GitHub API
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/refresh_stars.py
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github-metrics.svg README.md
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+          else
+            git commit -m "chore: refresh profile metrics & star counts [skip ci]"
+            git push
+          fi

@@ -26,16 +26,14 @@
 
 | Tool | Description | Stars |
 |------|-------------|:-----:|
-| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | ![Stars](https://img.shields.io/github/stars/0xbartita/h1-asset-fetcher?style=flat-square&color=00FF41) |
-| [**Cookie-Swapper**](https://github.com/0xbartita/Cookie-Swapper) | Burp Suite extension — auto-apply session tokens to all Repeater tabs. No more manual cookie replacement | ![Stars](https://img.shields.io/github/stars/0xbartita/Cookie-Swapper?style=flat-square&color=00FF41) |
+| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | ![Stars](https://img.shields.io/badge/stars-40-00FF41?style=flat-square) |
+| [**Cookie-Swapper**](https://github.com/0xbartita/Cookie-Swapper) | Burp Suite extension — auto-apply session tokens to all Repeater tabs. No more manual cookie replacement | ![Stars](https://img.shields.io/badge/stars-5-00FF41?style=flat-square) |
 
 ---
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=0xbartita&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&hide_rank=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=0xbartita&layout=compact&theme=chartreuse-dark&hide_border=true)
+![GitHub Metrics](./github-metrics.svg)
 
 </div>
 
