@@ -27,7 +27,7 @@
 | Tool | Description | Stars |
 |------|-------------|:-----:|
 | [**h1-monitor**](https://github.com/0xbartita/h1-monitor) | Self-hosted HackerOne monitor bot — watches public and private programs for scope changes and pushes them to your Telegram, Works 24/7. | ![Stars](https://img.shields.io/badge/stars-0-00FF41?style=flat-square) |
-| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | ![Stars](https://img.shields.io/badge/stars-41-00FF41?style=flat-square) |
+| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | ![Stars](https://img.shields.io/badge/stars-42-00FF41?style=flat-square) |
 | [**Cookie-Swapper**](https://github.com/0xbartita/Cookie-Swapper) | Burp Suite extension — auto-apply session tokens to all Repeater tabs. No more manual cookie replacement | ![Stars](https://img.shields.io/badge/stars-6-00FF41?style=flat-square) |
 ---
 
