@@ -26,9 +26,9 @@
 
 | Tool | Description | Stars |
 |------|-------------|:-----:|
-| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | [![Stars](https://img.shields.io/github/stars/0xbartita/h1-asset-fetcher?style=flat-square&color=00FF41&label=%E2%98%85)](https://github.com/0xbartita/h1-asset-fetcher/stargazers) |
-| [**Cookie-Swapper**](https://github.com/0xbartita/Cookie-Swapper) | Burp Suite extension — auto-apply session tokens to all Repeater tabs. No more manual cookie replacement | [![Stars](https://img.shields.io/github/stars/0xbartita/Cookie-Swapper?style=flat-square&color=00FF41&label=%E2%98%85)](https://github.com/0xbartita/Cookie-Swapper/stargazers) |
-| [**h1-monitor**](https://github.com/0xbartita/h1-monitor) | Self-hosted HackerOne monitor bot — watches public and private programs for scope changes and pushes them to your Telegram, 24/7 | [![Stars](https://img.shields.io/github/stars/0xbartita/h1-monitor?style=flat-square&color=00FF41&label=%E2%98%85)](https://github.com/0xbartita/h1-monitor/stargazers) |
+| [**h1-asset-fetcher**](https://github.com/0xbartita/h1-asset-fetcher) | Fetch, download & decompile Android/iOS/Exe assets from HackerOne bug bounty programs | [![Stars](https://img.shields.io/github/stars/0xbartita/h1-asset-fetcher?style=flat-square&color=0a7d2c&label=%E2%98%85)](https://github.com/0xbartita/h1-asset-fetcher/stargazers) |
+| [**Cookie-Swapper**](https://github.com/0xbartita/Cookie-Swapper) | Burp Suite extension — auto-apply session tokens to all Repeater tabs. No more manual cookie replacement | [![Stars](https://img.shields.io/github/stars/0xbartita/Cookie-Swapper?style=flat-square&color=0a7d2c&label=%E2%98%85)](https://github.com/0xbartita/Cookie-Swapper/stargazers) |
+| [**h1-monitor**](https://github.com/0xbartita/h1-monitor) | Self-hosted HackerOne monitor bot — watches public and private programs for scope changes and pushes them to your Telegram, 24/7 | [![Stars](https://img.shields.io/github/stars/0xbartita/h1-monitor?style=flat-square&color=0a7d2c&label=%E2%98%85)](https://github.com/0xbartita/h1-monitor/stargazers) |
 
 ---
 
@@ -36,10 +36,10 @@
 
 | Project | Description | Stars |
 |---------|-------------|:-----:|
-| [**ioscpy-windows**](https://github.com/0xbartita/ioscpy-windows) | Windows port — mirror & control a jailbroken iPhone over USB | [![Stars](https://img.shields.io/github/stars/0xbartita/ioscpy-windows?style=flat-square&color=8A8A8A&label=%E2%98%85)](https://github.com/0xbartita/ioscpy-windows/stargazers) |
-| [**NetWraith**](https://github.com/0xbartita/NetWraith) | iOS traffic-interception framework — routes all device HTTP/HTTPS through Burp Suite via a system-wide VPN tunnel | [![Stars](https://img.shields.io/github/stars/0xbartita/NetWraith?style=flat-square&color=8A8A8A&label=%E2%98%85)](https://github.com/0xbartita/NetWraith/stargazers) |
-| [**TrollVNC**](https://github.com/0xbartita/TrollVNC) | VNC server for iOS — remote screen access & control | [![Stars](https://img.shields.io/github/stars/0xbartita/TrollVNC?style=flat-square&color=8A8A8A&label=%E2%98%85)](https://github.com/0xbartita/TrollVNC/stargazers) |
-| [**ipatool**](https://github.com/0xbartita/ipatool) | ipatool with a keyring auth fix — resolves the "item could not be found in the keyring" error | [![Stars](https://img.shields.io/github/stars/0xbartita/ipatool?style=flat-square&color=8A8A8A&label=%E2%98%85)](https://github.com/0xbartita/ipatool/stargazers) |
+| [**ioscpy-windows**](https://github.com/0xbartita/ioscpy-windows) | Windows port — mirror & control a jailbroken iPhone over USB | [![Stars](https://img.shields.io/github/stars/0xbartita/ioscpy-windows?style=flat-square&color=484f58&label=%E2%98%85)](https://github.com/0xbartita/ioscpy-windows/stargazers) |
+| [**NetWraith**](https://github.com/0xbartita/NetWraith) | iOS traffic-interception framework — routes all device HTTP/HTTPS through Burp Suite via a system-wide VPN tunnel | [![Stars](https://img.shields.io/github/stars/0xbartita/NetWraith?style=flat-square&color=484f58&label=%E2%98%85)](https://github.com/0xbartita/NetWraith/stargazers) |
+| [**TrollVNC**](https://github.com/0xbartita/TrollVNC) | VNC server for iOS — remote screen access & control | [![Stars](https://img.shields.io/github/stars/0xbartita/TrollVNC?style=flat-square&color=484f58&label=%E2%98%85)](https://github.com/0xbartita/TrollVNC/stargazers) |
+| [**ipatool**](https://github.com/0xbartita/ipatool) | ipatool with a keyring auth fix — resolves the "item could not be found in the keyring" error | [![Stars](https://img.shields.io/github/stars/0xbartita/ipatool?style=flat-square&color=484f58&label=%E2%98%85)](https://github.com/0xbartita/ipatool/stargazers) |
 
 ---
 
