@@ -1,22 +1,25 @@
 name: Update profile metrics
 
-# Regenerates github-metrics.svg (stats + top languages) and refreshes the
-# static star badges in README.md, committing both back to the repo. This
-# replaces the shared github-readme-stats.vercel.app instance (paused) and the
-# live shields.io star badges (which can cache an "invalid" state).
+# Regenerates github-metrics.svg (stats + top languages) and commits it.
+# The README tool/fork tables and their star badges are owned by
+# update-tools.yml + .github/scripts/gen_tools.py.
 
 on:
   schedule:
     - cron: "17 6 * * *"   # daily, 06:17 UTC
-  workflow_dispatch:        # allow manual runs
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
       - ".github/workflows/metrics.yml"
-      - ".github/scripts/refresh_stars.py"
 
 permissions:
   contents: write
+
+# Shared with update-tools.yml so the two workflows never push to main at once.
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
 
 jobs:
   metrics:
@@ -24,23 +27,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      # Keep the static star-count badges current. Usually a no-op (star counts
-      # change rarely), so it commits only when a number actually moved.
-      - name: Refresh star badges
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          python3 .github/scripts/refresh_stars.py
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- README.md; then
-            echo "Star counts unchanged."
-          else
-            git add README.md
-            git commit -m "chore: refresh star counts [skip ci]"
-            git push
-          fi
 
       # Generate and commit github-metrics.svg. metrics handles its own commit.
       # Works with the default GITHUB_TOKEN for public data; add a repo secret

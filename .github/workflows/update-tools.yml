@@ -1,0 +1,49 @@
+name: Update tool tables
+
+# Rewrites the Public Tools and Forks tables in README.md from the live list of
+# public repos, so a newly published (public) tool shows up on its own — and a
+# deleted/archived one disappears. Runs every 6 hours, on demand, and whenever
+# the generator changes. Star counts are baked in as static badges by the
+# generator, so they refresh here too.
+
+on:
+  schedule:
+    - cron: "23 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # "Run workflow" button = instant refresh
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/update-tools.yml"
+      - ".github/scripts/gen_tools.py"
+
+permissions:
+  contents: write
+
+# Shared with metrics.yml so the two workflows never push to main at once.
+concurrency:
+  group: profile-readme
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Regenerate Tools & Forks tables
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/gen_tools.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- README.md; then
+            echo "Tool tables already current."
+          else
+            git add README.md
+            git commit -m "chore: auto-refresh tool tables [skip ci]"
+            git push
+          fi
