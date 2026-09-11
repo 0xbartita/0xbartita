@@ -39,7 +39,7 @@
 <!-- FORKS:START -->
 | Project | Description | Stars |
 |------|-------------|:-----:|
-| [**ioscpy-windows**](https://github.com/0xbartita/ioscpy-windows) | Windows port — mirror & control a jailbroken iPhone over USB | [![Stars](https://img.shields.io/badge/%E2%98%85-8-484f58?style=flat-square)](https://github.com/0xbartita/ioscpy-windows/stargazers) |
+| [**ioscpy-windows**](https://github.com/0xbartita/ioscpy-windows) | Windows port — mirror & control a jailbroken iPhone over USB | [![Stars](https://img.shields.io/badge/%E2%98%85-9-484f58?style=flat-square)](https://github.com/0xbartita/ioscpy-windows/stargazers) |
 | [**ipatool**](https://github.com/0xbartita/ipatool) | ipatool with a keyring auth fix — resolves the "item could not be found in the keyring" error | [![Stars](https://img.shields.io/badge/%E2%98%85-1-484f58?style=flat-square)](https://github.com/0xbartita/ipatool/stargazers) |
 | [**NetWraith**](https://github.com/0xbartita/NetWraith) | iOS traffic-interception framework — routes all device HTTP/HTTPS through Burp Suite via a system-wide VPN tunnel | [![Stars](https://img.shields.io/badge/%E2%98%85-1-484f58?style=flat-square)](https://github.com/0xbartita/NetWraith/stargazers) |
 | [**TrollVNC**](https://github.com/0xbartita/TrollVNC) | VNC server for iOS — remote screen access & control | [![Stars](https://img.shields.io/badge/%E2%98%85-0-484f58?style=flat-square)](https://github.com/0xbartita/TrollVNC/stargazers) |
